@@ -27,7 +27,7 @@ date_filter <- within(date_filter , stamp <- paste(date,time,sep=" "))
 
 date_filter$stamp <- dmy_hms(date_filter$stamp)
 
-
+Sys.setlocale("LC_TIME", "English")
 png(filename = "plot3.png",width = 480, height = 480)
 	
 plot(date_filter$stamp,date_filter$submetering1,ylim=c(0,40),type="n",ylab="Energy sub meetering",xlab=" ")

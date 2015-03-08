@@ -27,7 +27,7 @@ date_filter <- within(date_filter , stamp <- paste(date,time,sep=" "))
 
 date_filter$stamp <- dmy_hms(date_filter$stamp)
 
-
+Sys.setlocale("LC_TIME", "English")
 png(filename = "plot4.png",width = 480, height = 480)
 
 par(mfrow=c(2,2))	

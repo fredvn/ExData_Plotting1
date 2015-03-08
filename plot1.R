@@ -1,7 +1,7 @@
 library(lubridate)
 library(dplyr)
 
-plot_data <- function( ){
+plot_1 <- function( ){
 # first, create a directory to put data if not exist
 
 if(!file.exists("data")){
